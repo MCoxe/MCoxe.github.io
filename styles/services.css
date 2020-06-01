@@ -1,0 +1,190 @@
+
+.about {
+	width: 80%;
+	max-width: 1200px;
+	margin: 0 auto;
+	margin-top: 14rem;
+	
+    
+}
+
+.about-container {
+	
+	display: flex;
+
+}
+
+.tab-title {
+	font-size: 2rem;
+}
+
+
+.about-us-image {
+	width: 40%;
+	
+
+}
+
+.about-image {
+
+	width: 100%;
+	height: 100%
+
+}
+
+.about-tab {
+	width: 60%;
+	margin: 2.5rem;
+}
+
+.tab {
+	display: inline-block;	
+	position: relative;
+	padding: 2px;
+
+	
+}
+
+
+
+.tab::after {
+	content: "";
+	width: 100%;
+	height: 3px;
+	background: gray;
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+
+}
+
+.tablinks {
+	display: inline-block;	
+	margin-right: 1rem;
+	font-size: 1.2rem;
+	border: none;
+	background: none;
+	padding: 0;
+	text-transform: uppercase;
+	outline: none;
+	position: relative;
+	
+}
+
+.tablinks:focus {
+	color: #01b3a7;
+}
+
+.tablinks:hover {
+	cursor: pointer;
+}
+
+.tablinks:last-child {
+	margin-right: 0;
+}
+
+.tablinks:focus::after {
+	content: "";
+	width: 100%;
+	height: 3px;
+	background: red;
+	position: absolute;
+	left: 0;
+	bottom: -6.5px;
+	z-index: 2;
+}
+
+
+.tabcontent {
+	width: 67.42%;
+	text-align: left;
+	display: none;
+	padding: 1rem 0;
+	line-height: 1.4;
+}
+
+.about-us-btn {
+	display: inline-block;
+	background: orange;
+	
+	color: #ddd;
+	margin: 1rem 0;
+	font-size: 1.3rem;
+	transition: all .5s linear;
+		
+}
+
+.about-us-btn a {
+   display: inline-block;
+   padding: 1rem 2rem;
+   text-decoration: none;
+   color:#111;
+}
+
+.about-us-btn:hover {
+   background: transparent;
+   color: black;
+   cursor: pointer;
+   border:1px solid gray;
+}
+
+.services {
+  margin: 6rem 0;
+  text-align: center;
+  font-size: 1.4rem;
+  
+}
+
+.services-container {
+	margin-top: 0;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.service{
+   width: 30%;
+   border: 5px solid gray;
+   background: lightgray;
+   margin: 1.3%;
+   margin-left: 0;
+   padding: 10px;
+   border-radius:5%;
+   transition: all .5s linear;
+  
+}
+
+.service:hover{
+	transform: scale(1.02);
+	border: none;
+}
+
+.service-title, .icon, .service-text {
+	text-align: left;
+}
+
+
+.icon {
+	padding-right: 1rem;
+	color:#01b3a7;
+}
+
+.service-title {
+	font-size: 1.4rem;
+}
+
+.service-title:hover {
+
+	color: #01b3a7;
+}
+
+.service-text {
+	font-size: 1.1rem;
+	line-height: 1.5;
+	color:#94009E;
+}
+
+
+
+
+

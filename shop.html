@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta name="description" content="description">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>Shop</title>
+  
+  <link href="styles/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/scrolling.css">
+  <link href="styles/shop.css" rel="stylesheet">
+  
+</head>
+<body>
+  
+  <!-- scrolling message -->
+     <div class="scrollingWrapper">
+        <p class="scrolling-text">Due to COVID-19 all tours are cancelled. </p>
+     </div>
+  <!-- end of scrolling message -->
+
+      <!-- Header -->
+    <header class="headWrapper">
+      
+      <nav class="nav-bar">
+        <div class="logo"><a href="index.html">MuxiTravel</a></div>
+        <ul class="navbar-items">
+          <li class="navbar-item"><a href="Services.html">Services</a></li>
+          <li class="navbar-item"><a href="shop.html">Shop</a></li>
+          <li class="navbar-item"><a href="Contact_Us.html">Contact Us</a></li> 
+        </ul> 
+      </nav>
+    </header>
+
+    <!-- end of header -->
+
+  
+  <!-- main -->
+  <main id="main" class="main">
+    <div class="main__wrapper">
+
+      <!-- Left content -->
+      <div id="main__content" class="main__content">
+        <div class="catalog__wrapper">
+          <h2 class="catalog__heading">Book Your Tour Now!</h2>
+          <div id="catalog" class="catalog"> <!-- Generated dynamically --> </div>
+        </div>
+      </div>
+
+      <!-- end of left conten -->
+
+      <!-- Right sidebar -->
+      <aside id="main__sidebar" class="main__sidebar">
+        <div id="cart" class="cart">
+
+          <div class="cart__headingWrapper">
+            <h3 class="cart__heading">Shopping Cart</h3>
+          </div>
+
+          <div class="cart__columHeadingsWrapper">
+            <div class="cart__columnHeading">
+              <h4 class="cart__subheading cart__subheading--item">Item</h4>
+            </div>
+            <div class="cart__columnHeading">
+              <h4 class="cart__subheading cart__subheading--quantity">Quantity</h4>
+            </div>
+            <div class="cart__columnHeading">
+              <h4 class="cart__subheading cart__subheading--price">Price</h4>
+            </div>
+          </div>
+
+          <div id="cart__itemsWrapper" class="cart__itemsWrapper"><!-- Generated dynamically --></div>
+
+          <div class="cart__totalWrapper">
+            <div class="cart__totalLabel">
+              <h4 class="cart__subheading cart__subheading--total">Total</h4>
+            </div>
+            <div class="cart__totalTextWrapper">
+              <p id="cart__totalText" class="cart__totalText"><!-- Generated dynamically --></p>
+            </div>
+          </div>
+
+          <div class="cart__buyWrapper">
+            <button id="cart__buy" class="cart__button button button--cart">Buy Now</button>
+          </div>
+
+        </div>
+      </aside>
+      <!-- end of right sidebar -->
+
+    </div>
+  </main>
+  <!-- end of main -->
+
+  <!-- Checkout modal -->
+<section id="checkout_modal" class="modal">
+  <div class="modal__innerWrapper">
+    <div class="modal__content">
+      <h3 class="modal__heading">Checkout</h3>
+
+      <div id="receipt" class="receipt --hide">
+        <div class="receipt__top">
+          <h4 class="receipt__topHeading">Buy England Order Form</h4>
+          <p class="receipt__text">Thank you for shopping at Buy England</p>
+        </div>
+        <div class="receipt__bottom">
+          <h4 class="receipt__shippingHeading">Shipping Information</h4>
+          <p id="receipt_fullName" class="receipt__text receipt__shipTo"></p>
+          <p id="receipt_email" class="receipt__text receipt__email"></p>
+          <p id="receipt_street" class="receipt__text receipt__street"></p>
+          <p id="receipt_city" class="receipt__text receipt__city"></p>
+          <p id="receipt_state" class="receipt__text receipt__state"></p>
+          <p id="receipt_zip" class="receipt__text receipt__zip"></p>
+        </div>
+      </div>
+
+      <div id="checkout_content" class="modal__textWrapper">
+        <!-- Generated dynamically -->
+      </div>
+
+      <div class="cart__totalWrapper">
+        <div class="cart__totalLabel">
+          <h4 class="cart__subheading cart__subheading--total">Total</h4>
+        </div>
+        <div class="cart__totalTextWrapper">
+          <p id="checkout_total" class="cart__totalText"></p>
+        </div>
+      </div>
+
+      <form id="checkoutForm" name="membershipContactForm" class="form checkoutForm">
+        <!-- Full name -->
+        <div class="form__inputWrapper">
+          <label for="fullName" class="form__label">Full Name:</label>
+          <input name="fullName" id="fullName" class="form__input" type="text" pattern="^[A-Za-z]+\s[A-Za-z]+$" placeholder=" " required>
+        </div>
+
+        <!-- Email -->
+        <div class="form__inputWrapper">
+          <label for="email" class="form__label">Email:</label>
+          <input name="email" id="email" class="form__input" type="email" placeholder=" " required>
+        </div>
+
+        <!-- Street -->
+        <div class="form__inputWrapper">
+          <label for="street" class="form__label">Street Address:</label>
+          <input name="street" id="street" class="form__input" type="text" placeholder=" " required>
+        </div>
+
+        <!-- City -->
+        <div class="form__inputWrapper">
+          <label for="city" class="form__label">City:</label>
+          <input name="city" id="city" class="form__input" type="text" placeholder=" " required>
+        </div>
+
+        <!-- State -->
+        <div class="form__inputWrapper">
+          <label for="state" class="form__label">State:</label>
+          <input name="state" id="state" class="form__input" type="text" placeholder=" " required>
+        </div>
+
+        <!-- Zip -->
+        <div class="form__inputWrapper">
+          <label for="zip" class="form__label">Zip Code:</label>
+          <input name="zip" id="zip" class="form__input" type="text" pattern="(\d{5}([\-]\d{4})?)" placeholder=" " required>
+        </div>
+
+        <!-- Submit -->
+        <div class="form__inputWrapper form__inputWrapper--submit">
+          <input name="submitCheckout" id="submitCheckout" class="submit button" type="submit" value="Purchase">
+        </div>
+      </form>
+
+      <p class="modal__close" aria-label="Close modal" role="button">
+        <span aria-hidden="true">&times;</span>
+      </p>
+
+    </div>
+  </div>
+</section> <!-- End of modal -->
+
+ 
+  <!-- footer -->
+  <footer class="footer">
+
+    <div class="footer-wrapper">
+
+      <div class="footer-links">
+        <ul class="links">
+          <li class="link"><a href="index.html">Home</a></li>
+          <li class="link"><a href="services.html">Services</a></li>
+          <li class="link"><a href="shop.html">Shop</a></li>
+          <li class="link"><a href="Contact_Us.html">Contact US</a></li>
+        </ul> 
+      </div>
+
+      <div class="subscrib-wrapper">
+        <form class="subscrib-form" method="GET">
+          <input type="email" name="email" id="email" placeholder="Email here" required>
+          <input type="submit" value="Subscribe">
+        </form>
+        <p id="date"></p>
+      </div>
+      
+    </div>
+    
+  </footer> <!-- end of footer -->
+
+  
+  <!-- scripts -->
+  <script src="scrypts/cookies.js"></script>
+  <script src="scrypts/cookies.js"></script>
+  <script src="scrypts/Date.js"></script>
+  <script src="scrypts/shop.js"></script>
+
+
+</body>
+</html>

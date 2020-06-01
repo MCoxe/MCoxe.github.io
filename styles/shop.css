@@ -1,0 +1,383 @@
+
+/*product styling*/
+
+.main {
+  margin-top: 14rem;
+}
+
+
+.catalog__heading {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 1rem;
+  color: #222;
+ 
+}
+
+
+.main__content {
+  width: 70%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 0 1rem;
+}
+
+.catalog__wrapper {
+  width: 100%;
+
+}
+
+.main__sidebar {
+  position: fixed;
+  top: 14rem;
+  right: 0;
+ 
+  max-width: 35%;
+  
+}
+
+
+.product {
+  display: flex;
+  border: 1px solid #ddd;
+  width: 100%;
+  position: relative;
+}
+
+.product__image-Wrapper {
+  width: 30%;
+  height: 350px;
+  
+
+
+}
+
+.product__image{
+  width: 100%;
+  height: 100%;
+}
+
+.product__details {
+  width: 60%;
+  margin: 2rem 2.5rem ;
+}
+
+.product__name {
+  font-size: 1.5rem;
+  color: orange;
+}
+
+.product__description {
+  line-height: 1.5;
+  color: #111;
+  font-size: 1.1rem;
+}
+
+.product__quantityWrapper {
+  
+  position: relative;
+
+}
+
+.product__addToCart {
+  position: absolute;
+  right: 1rem;
+  top: 3px;
+  background: orange;
+  padding: .5rem 1.4rem;
+}
+
+.icon {
+  
+  font-size: 1.3rem;
+  margin-right: .3rem;
+}
+
+.product__addToCart:hover {
+  cursor: pointer;
+}
+.product__priceWrapper {
+  display: inline-block;
+  background: #01b3a7;
+  padding:0 1rem ;
+  color: #f3f3f3;
+  font-size: 1.1rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+}
+
+label {
+  display: inline-block;
+  width: 200px;
+  margin: .7rem;
+  
+}
+
+input[type="text"], input[type="email"] {
+  padding: .5rem;
+  border: 1px solid #111;
+  width: 300px;
+}
+
+.form__inputWrapper--submit {
+  margin: .2rem;
+  
+  
+
+}
+
+.form__inputWrapper--submit input[type="submit"]:hover {
+  background: gray;
+  color: #111;
+}
+
+
+/* ================================== */
+/* ======== CART ROW WRAPPERS ======= */
+/* ================================== */
+.cart {
+  display: flex;
+  flex-direction: column;
+  /*padding-right: 5rem;*/
+  border: 1px solid #ddd;
+  margin-right: 1rem;
+  border-radius: 10px;
+ 
+}
+
+.cart__headingWrapper,
+.cart__columHeadingsWrapper {
+  width: 100%;
+}
+
+.cart__columHeadingsWrapper,
+.cart__itemsWrapper,
+.cart__totalWrapper,
+.cart__buyWrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cart__buyWrapper {
+  justify-content: center;
+}
+
+.cart__itemWrapper {
+  width: 100%;
+}
+
+.cart__itemInfo {
+  display: flex;
+}
+
+.cart__totalTextWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16.66%;
+}
+
+.cart__columnHeading,
+.cart__itemColumn {
+  /* Half of 33% */
+  width: 16.66%;
+  text-align: center;
+}
+
+/* Item heading, item name */
+.cart__itemColumn--nameWrapper,
+.cart__columnHeading:nth-of-type(1) {
+  width: 66.66%;
+  text-align: left;
+}
+
+.cart__itemColumn,
+.cart__subheading {
+  padding-left: 1rem;
+}
+
+.cart__totalLabel {
+  width: 83.32%;
+}
+
+.cart__columnHeading,
+.cart__totalTextWrapper,
+.cart__itemColumn,
+.cart__totalLabel {
+  /* border: 1px solid black; */
+}
+
+.cart__columnHeading {
+  background-color: hsl(225, 73%, 57%);
+
+  color: hsl(0, 0%, 100%);
+}
+
+/* Select every ODD item wrapper */
+.cart__itemWrapper:nth-of-type(2n+1) {
+  background-color: hsl(120, 6%, 97%);
+}
+
+/* Select every EVEN item wrapper */
+.cart__itemWrapper:nth-of-type(2n) {
+  background-color: hsl(195, 13%, 94%);
+}
+
+.cart__columHeadingsWrapper {
+  box-shadow: 0 0 7px rgba(0, 0, 0, .3);
+  border-bottom: 1px solid hsla(0, 0%, 13%, .9);
+}
+
+.cart__totalWrapper {
+  background-color: white;
+  border-top: 1px solid hsla(0, 0%, 13%, .5);
+}
+
+
+
+
+/* ================================== */
+/* ========== CART CONTENTS ========= */
+/* ================================== */
+.cart__heading {
+  text-align: center;
+}
+
+.cart__subheading--total {
+  text-align: right;
+  padding-right: 2rem;
+}
+
+.cart__itemName {
+  margin-bottom: .25rem;
+}
+
+.cart__removeItem {
+  margin-top: .25rem;
+  color: hsl(240, 100%, 50%);
+  cursor: pointer;
+  transition: color .3s ease-out;
+}
+
+.cart__button {
+  background-color: hsl(225, 73%, 57%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: none;
+  border: none;
+  border-radius: .3rem;
+  padding: .75rem 1.5rem;
+  transition: bottom .3s ease-in-out, background-color .4s ease-in-out;
+  position: relative;
+  bottom: 0;
+  box-shadow: 0 .1875rem .625rem rgba(0, 0, 0, .3);
+}
+
+.cart__button:hover, .cart__button:focus, .cart__button:active {
+  background-color: hsla(225, 73%, 27%, 1);
+  bottom: .1rem;
+  box-shadow: 0 .4375rem .9375rem rgba(0, 0, 0, .3);
+}
+
+
+/* Override the sizing from main.css */
+.main__content.main__content {
+  width: 60%;
+  flex: 1 1 60%;
+}
+
+/* Override the sizing from main.css */
+.main__sidebar.main__sidebar {
+  width: 40%;
+  flex: 1 1 40%;
+}
+
+
+
+/* ================================== */
+/* ========== MODAL SECTION ========= */
+/* ================================== */
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(0, 0%, 0%, .5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scaleX(1.1) scaleY(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+/* Selects an element with BOTH the 'modal' and '--reveal' classes */
+.modal.--reveal {
+  opacity: 1;
+  visibility: visible;
+  transform: scaleX(1.0) scaleY(1.0);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal__innerWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsl(0, 0%, 100%);
+  padding: 1rem 1.5rem;
+  width: 50rem;
+  border-radius: 0.5rem;
+  overflow-y: auto;
+  max-height: 70vh;
+}
+
+.modal__content {
+  position: relative;
+}
+
+.modal__close {
+  position: absolute;
+  width: 1.5rem;
+  font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+  right: 1rem;
+  top: 1rem;
+  font-size: 3rem;
+  line-height: 1;
+  position: absolute;
+  color: hsl(0, 0%, 54%);
+  cursor: pointer;
+  margin: 0;
+  line-height: 0;
+  display: inline-block;
+  transition: color .3s ease-out;
+}
+
+.modal__close:hover, .modal__close:focus, .modal__close:active {
+  color: hsl(0, 0%, 13%);
+}
+
+.modal__heading {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.modal__image {
+  margin: 0 auto 2rem auto;
+}
+
+
+/* After transaction is completed, hide the "remove item" text from the receipt items */
+.modal.--transactionCompleted .cart__removeItem {
+  display: none;
+}
+
+
+/* ====================================== */
+/* ====       FOOTER ADJUSTMENTS     ==== */
+/* ====================================== */
+
+
+.footer {
+  margin-top: 4rem;
+}

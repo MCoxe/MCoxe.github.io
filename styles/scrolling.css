@@ -1,0 +1,47 @@
+.scrollingWrapper {
+	background: gray;
+	font-size: 3rem;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	padding: 1rem;
+	color: orange;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+}
+
+.scrolling-text {
+	margin: 0;
+	line-height: 3.125rem;
+	transform: translate(100%, 0);
+	animation: 30s linear infinite marquee;
+}
+
+@keyframes marquee {
+
+  /* At the very start of the animation */
+  0% {
+    /* Set the element 100% to the right (off screen) */
+    transform: translate(100%, 0);
+  }
+
+  25% {
+    color: hsl(240, 100%, 27%);
+  }
+
+  25%, 50% {
+    transform: translate(23%, 0);
+  }
+
+  75% {
+    color: hsl(0, 100%, 50%);
+  }
+
+  /* At the very end of the animation */
+  100% {
+    /* Shifts the content 100% to the left (off screen) */
+    transform: translate(-100%, 0);
+  }
+}
